@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PlanetasModelStoreContainer" CdmEntityContainer="AstroEntities">
+    <EntitySetMapping Name="Panetas">
+      <EntityTypeMapping TypeName="PlanetasModel.Paneta">
+        <MappingFragment StoreEntitySet="Panetas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nosaukums" ColumnName="Nosaukums" />
+          <ScalarProperty Name="Vid_att_no_Saules" ColumnName="Vid_att_no_Saules" />
+          <ScalarProperty Name="Vid_Radiuss__atiec_pret_zemi" ColumnName="Vid_Radiuss__atiec_pret_zemi" />
+          <ScalarProperty Name="Tilpums__attiec_pret_zemi" ColumnName="Tilpums__attiec_pret_zemi" />
+          <ScalarProperty Name="Masa" ColumnName="Masa" />
+          <ScalarProperty Name="Blivums" ColumnName="Blivums" />
+          <ScalarProperty Name="Gravitacija_uz__ekvatora" ColumnName="Gravitacija_uz _ekvatora" />
+          <ScalarProperty Name="Otrias_kos_atrums" ColumnName="Otrias_kos_atrums" />
+          <ScalarProperty Name="Rotacijas_periods" ColumnName="Rotacijas_periods" />
+          <ScalarProperty Name="Aprink_periods" ColumnName="Aprink_periods" />
+          <ScalarProperty Name="Vid_orbitalais_atrums" ColumnName="Vid_orbitalais_atrums" />
+          <ScalarProperty Name="Virsmas_vid_temp" ColumnName="Virsmas_vid_temp" />
+          <ScalarProperty Name="Vid_temp" ColumnName="Vid_temp" />
+          <ScalarProperty Name="Atmosferas_sastavs" ColumnName="Atmosferas_sastavs" />
+          <ScalarProperty Name="Dab_pavadoni" ColumnName="Dab_pavadoni" />
+          <ScalarProperty Name="Gredzeni" ColumnName="Gredzeni" />
+          <ScalarProperty Name="Apraksts" ColumnName="Apraksts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
