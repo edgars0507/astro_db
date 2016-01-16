@@ -50,6 +50,6 @@ C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.O
 C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.Google.xml
 C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.Twitter.xml
 C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\obj\Debug\astro_db.csprojResolveAssemblyReference.cache
 C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\obj\Debug\astro_db.dll
 C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\obj\Debug\astro_db.pdb
+C:\Users\Edgars\Desktop\astro_db\astro_db\astro_db\obj\Debug\astro_db.csprojResolveAssemblyReference.cache

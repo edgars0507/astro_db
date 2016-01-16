@@ -261,6 +261,7 @@
     <Content Include="Views\Planeta\Details.cshtml" />
     <Content Include="Views\Planeta\Edit.cshtml" />
     <Content Include="Views\Planeta\Index.cshtml" />
+    <Content Include="Views\Planeta\planetuapraksts.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

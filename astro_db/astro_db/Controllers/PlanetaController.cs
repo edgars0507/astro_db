@@ -19,6 +19,10 @@ namespace astro_db.Controllers
         {
             return View(db.Panetas.ToList());
         }
+        public ActionResult planetuapraksts()
+        {
+            return View(db.Panetas.ToList());
+        }
 
         // GET: /Planeta/Details/5
         public ActionResult Details(int? id)
