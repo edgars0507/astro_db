@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AstroModelGalerijaStoreContainer" CdmEntityContainer="AstroEntities1Galerija">
+    <EntitySetMapping Name="Atteli">
+      <EntityTypeMapping TypeName="AstroModelGalerija.Atteli">
+        <MappingFragment StoreEntitySet="Atteli">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nosaukums" ColumnName="Nosaukums" />
+          <ScalarProperty Name="Path" ColumnName="Path" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

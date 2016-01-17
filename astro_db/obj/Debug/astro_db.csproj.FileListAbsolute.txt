@@ -105,6 +105,5 @@ C:\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.OAuth.xml
 C:\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.Google.xml
 C:\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.Twitter.xml
 C:\astro_db\astro_db\astro_db\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\astro_db\astro_db\astro_db\obj\Debug\astro_db.csprojResolveAssemblyReference.cache
 C:\astro_db\astro_db\astro_db\obj\Debug\astro_db.dll
 C:\astro_db\astro_db\astro_db\obj\Debug\astro_db.pdb

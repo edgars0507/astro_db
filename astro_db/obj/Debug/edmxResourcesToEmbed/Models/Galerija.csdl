@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AstroModelGalerija" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Atteli">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nosaukums" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Path" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AstroEntities1Galerija" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Atteli" EntityType="Self.Atteli" />
+  </EntityContainer>
+</Schema>

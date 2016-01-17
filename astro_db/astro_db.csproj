@@ -161,6 +161,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\GalerijaController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LidaparatiController.cs" />
     <Compile Include="Controllers\MisijasController.cs" />
@@ -169,6 +170,24 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Atteli.cs">
+      <DependentUpon>Galerija.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galerija.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Galerija.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galerija.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Galerija.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Galerija.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Galerija.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Lidaparati.Context.cs">
       <AutoGen>True</AutoGen>
@@ -232,6 +251,28 @@
     <Content Include="App_Data\Astro_log.ldf">
       <DependentUpon>Astro.mdf</DependentUpon>
     </Content>
+    <Content Include="Atteli\Crescent_Saturn_as_seen_from_Voyager_1.jpg" />
+    <Content Include="Atteli\Ganymede_from_Pioneer_10.jpg" />
+    <Content Include="Atteli\Great_Red_Spot_From_Voyager_1.jpg" />
+    <Content Include="Atteli\jupitera_sarkanais_plankums.jpg" />
+    <Content Include="Atteli\Jupiters.jpg" />
+    <Content Include="Atteli\Marss.jpg" />
+    <Content Include="Atteli\marss_indijas_misija.jpg" />
+    <Content Include="Atteli\Merkurs.jpg" />
+    <Content Include="Atteli\Neptune.jpg" />
+    <Content Include="Atteli\Pioneer-10_jupiter_moons.jpg" />
+    <Content Include="Atteli\Pioneer_10-11_spacecraft.jpg" />
+    <Content Include="Atteli\Pioneer_10_Construction.jpg" />
+    <Content Include="Atteli\Pioneer_11_saturna_gredzeni.gif" />
+    <Content Include="Atteli\Saturns.jpg" />
+    <Content Include="Atteli\titan.jpg" />
+    <Content Include="Atteli\Titan_Haze.jpg" />
+    <Content Include="Atteli\Urāns.jpg" />
+    <Content Include="Atteli\Valhalla_crater_on_Callisto.jpg" />
+    <Content Include="Atteli\Venera.jpg" />
+    <Content Include="Atteli\Voyager1-saturn-f-ring.jpg" />
+    <Content Include="Atteli\Voyager1.jpg" />
+    <Content Include="Atteli\Zeme.jpg" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="favicon.ico" />
@@ -291,6 +332,23 @@
       <DependentUpon>Misijas.edmx</DependentUpon>
       <LastGenOutput>Misijas1.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\Galerija.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Galerija.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Galerija.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Galerija.edmx</DependentUpon>
+      <LastGenOutput>Galerija.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Galerija.edmx.diagram">
+      <DependentUpon>Galerija.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Galerija.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Galerija.edmx</DependentUpon>
+      <LastGenOutput>Galerija.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -344,6 +402,11 @@
     <Content Include="Views\Misijas\Details.cshtml" />
     <Content Include="Views\Misijas\Edit.cshtml" />
     <Content Include="Views\Misijas\Index.cshtml" />
+    <Content Include="Views\Galerija\Create.cshtml" />
+    <Content Include="Views\Galerija\Delete.cshtml" />
+    <Content Include="Views\Galerija\Details.cshtml" />
+    <Content Include="Views\Galerija\Edit.cshtml" />
+    <Content Include="Views\Galerija\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -355,6 +418,7 @@
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
