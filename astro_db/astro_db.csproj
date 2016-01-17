@@ -162,12 +162,31 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LidaparatiController.cs" />
     <Compile Include="Controllers\PlanetaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Lidaparati.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidaparati.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Lidaparati.cs">
+      <DependentUpon>Lidaparati.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Lidaparati.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidaparati.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Lidaparati1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Lidaparati.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Paneta.cs">
       <DependentUpon>planetas.tt</DependentUpon>
     </Compile>
@@ -219,6 +238,23 @@
       <DependentUpon>planetas.edmx</DependentUpon>
       <LastGenOutput>planetas.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\Lidaparati.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Lidaparati.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Lidaparati.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Lidaparati.edmx</DependentUpon>
+      <LastGenOutput>Lidaparati.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Lidaparati.edmx.diagram">
+      <DependentUpon>Lidaparati.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Lidaparati.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Lidaparati.edmx</DependentUpon>
+      <LastGenOutput>Lidaparati1.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -262,6 +298,11 @@
     <Content Include="Views\Planeta\Edit.cshtml" />
     <Content Include="Views\Planeta\Index.cshtml" />
     <Content Include="Views\Planeta\planetuapraksts.cshtml" />
+    <Content Include="Views\Lidaparati\Create.cshtml" />
+    <Content Include="Views\Lidaparati\Delete.cshtml" />
+    <Content Include="Views\Lidaparati\Details.cshtml" />
+    <Content Include="Views\Lidaparati\Edit.cshtml" />
+    <Content Include="Views\Lidaparati\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

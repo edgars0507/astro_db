@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AstroModelLidaparati" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Lidaparati">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nosaukums" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Apraksts" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="LidaparatiEntity" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Lidaparati" EntityType="Self.Lidaparati" />
+  </EntityContainer>
+</Schema>
