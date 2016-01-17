@@ -1,10 +1,10 @@
 ﻿@model astro_db.Models.Misijas
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Apskatīt";
 }
 
-<h2>Details</h2>
+<h2>@ViewBag.Title</h2>
 
 <div>
     <h4>Misijas</h4>
@@ -61,6 +61,6 @@
     </dl>
 </div>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Labot", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Atpakaļ", "Index")
 </p>
