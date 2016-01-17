@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="PlanetasModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Panetas">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Nosaukums" Type="nchar" MaxLength="20" />
+          <Property Name="Vid_att_no_Saules" Type="int" />
+          <Property Name="Vid_Radiuss__atiec_pret_zemi" Type="text" />
+          <Property Name="Tilpums__attiec_pret_zemi" Type="text" />
+          <Property Name="Masa" Type="nchar" MaxLength="20" />
+          <Property Name="Blivums" Type="float" />
+          <Property Name="Gravitacija_uz _ekvatora" Type="float" />
+          <Property Name="Otrias_kos_atrums" Type="float" />
+          <Property Name="Rotacijas_periods" Type="float" />
+          <Property Name="Aprink_periods" Type="float" />
+          <Property Name="Vid_orbitalais_atrums" Type="float" />
+          <Property Name="Virsmas_vid_temp" Type="int" />
+          <Property Name="Vid_temp" Type="int" />
+          <Property Name="Atmosferas_sastavs" Type="nchar" MaxLength="10" />
+          <Property Name="Dab_pavadoni" Type="int" />
+          <Property Name="Gredzeni" Type="nchar" MaxLength="10" />
+          <Property Name="Apraksts" Type="text" />
+        </EntityType>
+        <EntityContainer Name="PlanetasModelStoreContainer">
+          <EntitySet Name="Panetas" EntityType="Self.Panetas" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PlanetasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Paneta">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Nosaukums" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Vid_att_no_Saules" Type="Int32" />
+          <Property Name="Vid_Radiuss__atiec_pret_zemi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Tilpums__attiec_pret_zemi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Masa" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+          <Property Name="Blivums" Type="Double" />
+          <Property Name="Gravitacija_uz__ekvatora" Type="Double" />
+          <Property Name="Otrias_kos_atrums" Type="Double" />
+          <Property Name="Rotacijas_periods" Type="Double" />
+          <Property Name="Aprink_periods" Type="Double" />
+          <Property Name="Vid_orbitalais_atrums" Type="Double" />
+          <Property Name="Virsmas_vid_temp" Type="Int32" />
+          <Property Name="Vid_temp" Type="Int32" />
+          <Property Name="Atmosferas_sastavs" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Dab_pavadoni" Type="Int32" />
+          <Property Name="Gredzeni" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="Apraksts" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="AstroEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Panetas" EntityType="Self.Paneta" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PlanetasModelStoreContainer" CdmEntityContainer="AstroEntities">
+          <EntitySetMapping Name="Panetas">
+            <EntityTypeMapping TypeName="PlanetasModel.Paneta">
+              <MappingFragment StoreEntitySet="Panetas">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Nosaukums" ColumnName="Nosaukums" />
+                <ScalarProperty Name="Vid_att_no_Saules" ColumnName="Vid_att_no_Saules" />
+                <ScalarProperty Name="Vid_Radiuss__atiec_pret_zemi" ColumnName="Vid_Radiuss__atiec_pret_zemi" />
+                <ScalarProperty Name="Tilpums__attiec_pret_zemi" ColumnName="Tilpums__attiec_pret_zemi" />
+                <ScalarProperty Name="Masa" ColumnName="Masa" />
+                <ScalarProperty Name="Blivums" ColumnName="Blivums" />
+                <ScalarProperty Name="Gravitacija_uz__ekvatora" ColumnName="Gravitacija_uz _ekvatora" />
+                <ScalarProperty Name="Otrias_kos_atrums" ColumnName="Otrias_kos_atrums" />
+                <ScalarProperty Name="Rotacijas_periods" ColumnName="Rotacijas_periods" />
+                <ScalarProperty Name="Aprink_periods" ColumnName="Aprink_periods" />
+                <ScalarProperty Name="Vid_orbitalais_atrums" ColumnName="Vid_orbitalais_atrums" />
+                <ScalarProperty Name="Virsmas_vid_temp" ColumnName="Virsmas_vid_temp" />
+                <ScalarProperty Name="Vid_temp" ColumnName="Vid_temp" />
+                <ScalarProperty Name="Atmosferas_sastavs" ColumnName="Atmosferas_sastavs" />
+                <ScalarProperty Name="Dab_pavadoni" ColumnName="Dab_pavadoni" />
+                <ScalarProperty Name="Gredzeni" ColumnName="Gredzeni" />
+                <ScalarProperty Name="Apraksts" ColumnName="Apraksts" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

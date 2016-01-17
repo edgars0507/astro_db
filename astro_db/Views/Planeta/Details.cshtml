@@ -1,0 +1,154 @@
+﻿@model astro_db.Models.Paneta
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Paneta</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Nosaukums)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Nosaukums)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vid_att_no_Saules)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vid_att_no_Saules)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vid_Radiuss__atiec_pret_zemi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vid_Radiuss__atiec_pret_zemi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tilpums__attiec_pret_zemi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tilpums__attiec_pret_zemi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Masa)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Masa)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Blivums)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Blivums)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gravitacija_uz__ekvatora)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gravitacija_uz__ekvatora)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Otrias_kos_atrums)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Otrias_kos_atrums)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Rotacijas_periods)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Rotacijas_periods)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Aprink_periods)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Aprink_periods)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vid_orbitalais_atrums)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vid_orbitalais_atrums)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Virsmas_vid_temp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Virsmas_vid_temp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Vid_temp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Vid_temp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Atmosferas_sastavs)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Atmosferas_sastavs)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Dab_pavadoni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dab_pavadoni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Gredzeni)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Gredzeni)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Apraksts)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Apraksts)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

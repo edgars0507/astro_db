@@ -1,0 +1,119 @@
+﻿@model IEnumerable<astro_db.Models.Paneta>
+
+@{
+    ViewBag.Title = "Planētas";
+}
+
+<h2>Info par planētām</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+           Nosaukums
+        </th>
+        <th>
+            Vidējais attālums no saules
+        </th>
+        <th>
+           Vidējais radiuss
+        </th>
+        <th>
+            Tilpums attiecībā pret zemi
+        </th>
+        <th>
+           Masa
+        </th>
+        <th>
+           Blīvums
+        </th>
+        <th>
+           Gravitāvija uz ekvatora
+        </th>
+        <th>
+            Otrais kosmiskais ātrums
+        </th>
+        <th>
+           Rotācijas periods
+        </th>
+        <th>
+           Apriņķošanas periods
+        </th>
+        <th>
+           Vidējais orbitālais ātrums
+        </th>
+        <th>
+           Virsmas vidējā temperatūra
+        </th>
+        <th>
+            Vidējā temperatūra pie jūras līmeņa
+        </th>
+        <th>
+           Atmosfēras sastāvs
+        </th>
+        <th>
+           DAbisko pavadoņu skaits
+        </th>
+        <th>
+           Gredzeni (ir/nav)
+        </th>
+       
+       
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nosaukums)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vid_att_no_Saules)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vid_Radiuss__atiec_pret_zemi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Tilpums__attiec_pret_zemi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Masa)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Blivums)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gravitacija_uz__ekvatora)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Otrias_kos_atrums)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Rotacijas_periods)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Aprink_periods)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vid_orbitalais_atrums)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Virsmas_vid_temp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Vid_temp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Atmosferas_sastavs)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dab_pavadoni)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Gredzeni)
+        </td>
+       
+       
+    </tr>
+}
+
+</table>

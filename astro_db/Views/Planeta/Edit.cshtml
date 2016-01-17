@@ -1,0 +1,170 @@
+﻿@model astro_db.Models.Paneta
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Paneta</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nosaukums, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nosaukums)
+                @Html.ValidationMessageFor(model => model.Nosaukums)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Vid_att_no_Saules, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Vid_att_no_Saules)
+                @Html.ValidationMessageFor(model => model.Vid_att_no_Saules)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Vid_Radiuss__atiec_pret_zemi, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Vid_Radiuss__atiec_pret_zemi)
+                @Html.ValidationMessageFor(model => model.Vid_Radiuss__atiec_pret_zemi)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Tilpums__attiec_pret_zemi, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Tilpums__attiec_pret_zemi)
+                @Html.ValidationMessageFor(model => model.Tilpums__attiec_pret_zemi)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Masa, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Masa)
+                @Html.ValidationMessageFor(model => model.Masa)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Blivums, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Blivums)
+                @Html.ValidationMessageFor(model => model.Blivums)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gravitacija_uz__ekvatora, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Gravitacija_uz__ekvatora)
+                @Html.ValidationMessageFor(model => model.Gravitacija_uz__ekvatora)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Otrias_kos_atrums, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Otrias_kos_atrums)
+                @Html.ValidationMessageFor(model => model.Otrias_kos_atrums)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Rotacijas_periods, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Rotacijas_periods)
+                @Html.ValidationMessageFor(model => model.Rotacijas_periods)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Aprink_periods, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Aprink_periods)
+                @Html.ValidationMessageFor(model => model.Aprink_periods)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Vid_orbitalais_atrums, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Vid_orbitalais_atrums)
+                @Html.ValidationMessageFor(model => model.Vid_orbitalais_atrums)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Virsmas_vid_temp, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Virsmas_vid_temp)
+                @Html.ValidationMessageFor(model => model.Virsmas_vid_temp)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Vid_temp, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Vid_temp)
+                @Html.ValidationMessageFor(model => model.Vid_temp)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Atmosferas_sastavs, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Atmosferas_sastavs)
+                @Html.ValidationMessageFor(model => model.Atmosferas_sastavs)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Dab_pavadoni, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Dab_pavadoni)
+                @Html.ValidationMessageFor(model => model.Dab_pavadoni)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Gredzeni, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Gredzeni)
+                @Html.ValidationMessageFor(model => model.Gredzeni)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Apraksts, new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Apraksts)
+                @Html.ValidationMessageFor(model => model.Apraksts)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

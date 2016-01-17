@@ -1,0 +1,25 @@
+﻿@model IEnumerable<astro_db.Models.Paneta>
+
+@{
+    ViewBag.Title = "Planētas";
+}
+
+<h2>Planētu apraksts</h2>
+
+
+<table class="table">
+        
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Nosaukums)
+        </td>
+        <td >
+            @Html.DisplayFor(modelItem => item.Apraksts)
+        </td>
+       
+    </tr>
+}
+
+</table>

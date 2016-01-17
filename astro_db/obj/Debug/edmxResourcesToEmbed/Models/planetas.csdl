@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PlanetasModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Paneta">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nosaukums" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Vid_att_no_Saules" Type="Int32" />
+    <Property Name="Vid_Radiuss__atiec_pret_zemi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Tilpums__attiec_pret_zemi" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Masa" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Blivums" Type="Double" />
+    <Property Name="Gravitacija_uz__ekvatora" Type="Double" />
+    <Property Name="Otrias_kos_atrums" Type="Double" />
+    <Property Name="Rotacijas_periods" Type="Double" />
+    <Property Name="Aprink_periods" Type="Double" />
+    <Property Name="Vid_orbitalais_atrums" Type="Double" />
+    <Property Name="Virsmas_vid_temp" Type="Int32" />
+    <Property Name="Vid_temp" Type="Int32" />
+    <Property Name="Atmosferas_sastavs" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Dab_pavadoni" Type="Int32" />
+    <Property Name="Gredzeni" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Name="Apraksts" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="AstroEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Panetas" EntityType="Self.Paneta" />
+  </EntityContainer>
+</Schema>
