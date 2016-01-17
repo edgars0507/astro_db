@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AstroModelMisijasStoreContainer" CdmEntityContainer="MisijasEntities">
+    <EntitySetMapping Name="Misijas">
+      <EntityTypeMapping TypeName="AstroModelMisijas.Misijas">
+        <MappingFragment StoreEntitySet="Misijas">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Nosaukums" ColumnName="Nosaukums" />
+          <ScalarProperty Name="Datums" ColumnName="Datums" />
+          <ScalarProperty Name="Valsts" ColumnName="Valsts" />
+          <ScalarProperty Name="Merkis" ColumnName="Merkis" />
+          <ScalarProperty Name="Rezultats" ColumnName="Rezultats" />
+          <ScalarProperty Name="Apraksts" ColumnName="Apraksts" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -163,6 +163,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\LidaparatiController.cs" />
+    <Compile Include="Controllers\MisijasController.cs" />
     <Compile Include="Controllers\PlanetaController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -186,6 +187,24 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Lidaparati.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Misijas.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misijas.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Misijas.cs">
+      <DependentUpon>Misijas.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Misijas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misijas.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Misijas1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Misijas.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\Paneta.cs">
       <DependentUpon>planetas.tt</DependentUpon>
@@ -255,6 +274,23 @@
       <DependentUpon>Lidaparati.edmx</DependentUpon>
       <LastGenOutput>Lidaparati1.cs</LastGenOutput>
     </Content>
+    <EntityDeploy Include="Models\Misijas.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Misijas.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Misijas.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Misijas.edmx</DependentUpon>
+      <LastGenOutput>Misijas.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Misijas.edmx.diagram">
+      <DependentUpon>Misijas.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Misijas.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Misijas.edmx</DependentUpon>
+      <LastGenOutput>Misijas1.cs</LastGenOutput>
+    </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -303,6 +339,11 @@
     <Content Include="Views\Lidaparati\Details.cshtml" />
     <Content Include="Views\Lidaparati\Edit.cshtml" />
     <Content Include="Views\Lidaparati\Index.cshtml" />
+    <Content Include="Views\Misijas\Create.cshtml" />
+    <Content Include="Views\Misijas\Delete.cshtml" />
+    <Content Include="Views\Misijas\Details.cshtml" />
+    <Content Include="Views\Misijas\Edit.cshtml" />
+    <Content Include="Views\Misijas\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

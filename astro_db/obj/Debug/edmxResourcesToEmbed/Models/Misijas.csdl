@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AstroModelMisijas" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Misijas">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" />
+    <Property Name="Nosaukums" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Datums" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
+    <Property Name="Valsts" Type="String" MaxLength="20" FixedLength="true" Unicode="true" />
+    <Property Name="Merkis" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Rezultats" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Apraksts" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="MisijasEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Misijas" EntityType="Self.Misijas" />
+  </EntityContainer>
+</Schema>
